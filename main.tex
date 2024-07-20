@@ -9,6 +9,14 @@
 \usepackage{charter}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%   Customized Packages
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\usepackage[dvipsnames]{xcolor}
+\setlength\bibitemsep{0.5\baselineskip}
+\usepackage{titlesec}
+% \usepackage{enumerate}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Formatting Date and Time
 % Reference:
 %   https://www.ctan.org/pkg/datetime
@@ -22,93 +30,15 @@
 % Personal Information
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
-\name{Kuan-Yu Chang}
-\jobtitle{Design Verification Engineer}
-\address{ASMedia Technology Inc. \\
-    6F, No. 115, Minquan Rd., Xindian Dist., \\
-    New Taipei City 231, Taiwan, R.O.C.}
-\phone{+886-2-2219-6088\#5244}
-\email{kuanyu\_chang@asmedia.com.tw}
-\latestver{https://github.com/KuanYuChang/curriculum\_vitae/blob/main/CV.pdf}
+\name{Chen-Hao Chao}
 
 \begin{document}
 
 \makeinfo
-
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% Experiences
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-\section{Professional Experiences}
-
-\experience{Design Verification Engineer}
-    {Logic Design Department II, Research and Development Center}
-    {ASMedia Technology Inc., Taiwan}
-    {\simplemmyy{2023}{7}{17} - present}
-    {width=.33\linewidth}{logos-png/asmedia.png}
-    {\begin{itemize}
-        \item Universal Serial Bus 4 (USB4\textsuperscript{\tiny\textregistered}),  Version 1.0 \href{https://www.usb.org/usb4}{[Read more]}
-        \begin{itemize}
-            \item Perform the design verification utilizing Synopsys\textsuperscript{\tiny\textregistered} VC Verification IPs \href{https://www.synopsys.com/verification/verification-ip/subsystems/vc-verification-ip-usb4.html}{[Read more]}
-            \item Develop compliance test cases based on USB4CV Compliance Test Specifications. \href{https://www.usb.org/document-library/usb4cv-compliance-test-specification}{[Read more]}
-            \begin{itemize}
-                \item USB4\texttrademark Host Interface Compliance Test Specification Revision 1.9
-                \begin{itemize}
-                    \item Host-to-Host Tunneling transfer in Raw mode and Frame mode
-                    \item End-to-End Flow Control
-                    \item Multiple Host-to-Host Paths (up to 20 paths operate concurrently)
-                \end{itemize}
-                \item USB4\texttrademark Logical Layer Compliance Test Specification for Router Assemblies Revision 1.10
-                \begin{itemize}
-                    \item Lane Initialization including Phases and Lane Adapter States
-                    \item Entry and Exit of Low Power States including CL2, CL1, CL0s
-                \end{itemize}
-                \item Reproduce design issues reported by Customer feedback
-            \end{itemize}
-            \item Enhance Bus Functional Models (BFMs) that are co-worked with the RTL design
-            \begin{itemize}
-                \item The BFM for controlling the Sideband Channel
-                \item The BFM for accessing the Host Interface Adapter Layer's programming interface
-            \end{itemize}
-        \end{itemize}
-    \end{itemize}}
-
-\experience{Verification IP (VIP) Engineer (RDSS)\footnote{RDSS stands for Research and Development Substitute Services.}}
-    {Upper Layer Group of PCIe VIP Team}
-    {Avery Design Systems, Inc., Taiwan\footnote{Siemens Digital Industries Software acquired Avery Design Systems, Inc. in March 2023. \href{https://newsroom.sw.siemens.com/en-US/siemens-avery-design-systems/}{[Read more]}}}
-    {\simplemmyy{2021}{7}{19} - \simplemmyy{2023}{4}{10}}
-    {width=.33\linewidth}{logos-png/avery-design-systems.png}
-    {\begin{itemize}
-        \item PCI Express\textsuperscript{\tiny\textregistered} (PCIe\textsuperscript{\tiny\textregistered}) 6.0 \href{https://pcisig.com/pci-express-6.0-specification}{[Read more]}
-        \begin{itemize}
-            \item Enhance the Bus Functional Model (BFM) to support Flit mode.
-            \begin{itemize}
-                \item Flit\_Marker mechanism
-                \item Flit Ack, Nak, and Discard Rules
-                \item Flit Replay Rules (especially the Selective Replay)
-            \end{itemize}
-            \item Enhance / Develop compliance test cases for Flit mode.
-            \begin{itemize}
-                \item 14-Bit Tag mechanism
-                \item Orthogonal Header Content (OHC) of Transaction Layer Packets
-                \item Shared Flow Control with extended virtual channels
-            \end{itemize}
-        \end{itemize}
-        \item Streaming Fabric Interface (SFI), Revision 1.0 \href{https://www.intel.com/content/www/us/en/content-details/644200/streaming-fabric-interface-sfi-specification.html}{[Read more]}
-        \begin{itemize}
-            \item Design the architecture of the BFM.
-            \item Lead the schedule of the product development.
-            \item Develop the functionality to align with the latest specification.
-        \end{itemize}
-        \item Resolved \textbf{350+} issues while supporting customers on the bug tracking system (Bugzilla)
-        \begin{itemize}
-            \item {\textbf{67.33\%} Customer Issues / \textbf{27.56\%} Product Enhancements}
-        \end{itemize}
-        \item Contributed \textbf{13k+} lines of SystemVerilog code on the Concurrent Versions System (CVS, Linux)
-        \begin{itemize}
-            \item \textbf{16.07\%} PCIe BFM / \textbf{25.96\%} SFI BFM / \textbf{57.97\%} Test cases
-        \end{itemize}
-    \end{itemize}}
+% \showphone{+886-909600447}
+\showemail{chenhao.chao@mail.utoronto.ca}
+\showgithub{https://github.com/chen-hao-chao}\newline
+\showpage{https://chen-hao-chao.github.io}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Education
@@ -116,24 +46,152 @@
 
 \section{Education}
 
-\education{National Tsing Hua University, Hsinchu, Taiwan}
-        {Advisor: Prof. Chun-Yi Lee}
-        {width=.15\linewidth}{logos-png/national-tsing-hua-university.png}{
-    \begin{itemize}
-        \item M.S. in Computer Science -- \textit{\simplemmyy{2021}{6}{30}} % (GPA: \textbf{4.22} / 4.30)
-        \begin{itemize}
-            \item \textbf{Master’s Thesis}: \textit{Mapping Nearest Neighbor Compliant Quantum Circuits onto a 2-D Hexagonal Architecture} \href{https://hdl.handle.net/11296/dpttkc}{[NDLTD]}
-        \end{itemize}
-        \item B.S. in Interdisciplinary Program of Science -- \textit{\simplemmyy{2017}{6}{30}} % (CS-Major GPA: \textbf{4.10} / 4.30)
-        \begin{itemize}
-            \item Double expertise in \textit{Computer Science} and \textit{Chemistry}
-        \end{itemize}
-    \end{itemize}}
+\education
+{University of Toronto, Canada}
+{\simplemmyy{2024}{9}{1} -- Present}
+{Ph.D. in Computer Science, advised by Prof. \underline{Rahul G. Krishnan}}
+
+\education
+{National Tsing Hua University, Taiwan}
+{\simplemmyy{2021}{9}{1} -- \simplemmyy{2024}{6}{1}}
+{Master of Computer Science, advised by Prof. \underline{Chun-Yi Lee}, CGPA: 4.30 / 4.30}
+
+\education
+{National Tsing Hua University, Taiwan}
+{\simplemmyy{2017}{9}{1} -- \simplemmyy{2021}{6}{1}}
+{Bachelor of Computer Science, CGPA: 4.17 / 4.30}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Experiences
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Experiences}
+% \vspace{-0.5em}
+\experience
+{Research Intern}
+{\simplemmyy{2023}{10}{16} -- \simplemmyy{2024}{07}{10}}
+{NVIDIA AI Technology Center, NVIDIA Corporation}
+{$\bullet$ Conducted a research project on Reinforcement Learning~\cite{chao2024maximum}.}
+
+\experience
+{Visiting Scholar}
+{\simplemmyy{2022}{9}{1} -- \simplemmyy{2022}{11}{31}}
+{Robotics Perception and Learning (RIPL) Lab, Georgia Institute of Technology}
+{$\bullet$ Conducted a research project on generative models~\cite{chao2023training}, accepted by \textit{\textbf{\textcolor{black}{NeurIPS 2023}}}.}
+
+\experience
+{Research Intern}
+{\simplemmyy{2021}{3}{2} -- \simplemmyy{2022}{3}{1}}
+{Division of Multimedia Development, MediaTek Inc.}
+{$\bullet$ Conducted a research project on generative models~\cite{chao2022denoising}, accepted by \textit{\textbf{\textcolor{black}{ICLR 2022}}}.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 % Publications
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
+\section{Publications}
 \makepublications
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Services
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Services}
+\begin{itemize}
+\setlength\itemsep{0.5em}
+    \item \textbf{Reviewer}, the \textit{Conference on Neural Information Processing Systems (NeurIPS 2024)}.
+    \item \textbf{Reviewer}, the \textit{International Conference on Machine Learning (ICML 2024)}.
+    \item \textbf{Reviewer}, the \textit{International Conference on Learning Representations (ICLR 2024)}.
+    \item \textbf{Reviewer}, the \textit{Conference on Neural Information Processing Systems (NeurIPS 2023)}.
+    \item \textbf{Reviewer}, \textit{IEEE / CVF Computer Vision and Pattern Recognition Conference Workshop (CVPRW)} on \textit{Learning with Limited Labelled Data for Image and Video Understanding (L3D-IVU 2022)}.
+    \item \textbf{Teaching assistant}, \textit{Logic Design Laboratory} -- National Tsing Hua University, Fall 2020.
+        \begin{itemize}
+        \item Instructor: Prof. Chun-Yi Lee
+        \end{itemize}
+    \item \textbf{Teaching assistant}, \textit{Digital Logic Design} -- National Tsing Hua University, Spring 2019.
+        \begin{itemize}
+        \item Instructor: Prof. Youn-Long Lin
+        \end{itemize}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Awards and Honors
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\vspace{-0.5em}
+\section{Awards and Honors}
+\begin{itemize}
+\setlength\itemsep{0.5em}
+    \item \textbf{NeurIPS 2023 Scholar Award} -- \simplemmyy{2023}{10}{21}.
+    \begin{itemize}
+        \item Recipient of financial support as the author of a paper accepted by NeurIPS 2023.
+    \end{itemize}
+    \item \textbf{Google Conference Scholarship} -- Google Inc., \simplemmyy{2023}{8}{1}.
+    \begin{itemize}
+        \item Awarded to the first author of a top computer science conference paper.
+    \end{itemize}
+    \item \textbf{Student International Visiting Scholarship} -- NTHU, Taiwan, \simplemmyy{2022}{11}{1}.
+    \begin{itemize}
+        \item Granted to students engaged in short-term research, visits, internships, or competitions at foreign universities or academic institutions.
+    \end{itemize}
+    % \item \textbf{Garmin Scholarship} -- Garmin Ltd., Taiwan, \simplemmyy{2021}{11}{1}.
+    % \begin{itemize}
+    %     \item Awarded to 14 outstanding graduate students in Taiwan.
+    % \end{itemize}
+    \item \textbf{High Distinction Award, Student Paper Contest} -- Chinese Institute of Engineers, Taiwan, \simplemmyy{2021}{7}{1}.
+    \begin{itemize}
+        \item Granted to students with an excellent thesis.
+    \end{itemize}
+    % \item \textbf{Outstanding Student Scholarship} -- College of Elec. Eng. and Comp. Sci. (EECS), NTHU, Taiwan, \simplemmyy{2020}{6}{17}.
+    % \begin{itemize}
+    %     \item Granted to students of the College of EECS at NTHU for excellent academic performance.
+    % \end{itemize}
+    % \item Silver Medal Award, NTHU EECS Graduation Project Competition, Coll. of Elec. Eng. and Comp. Sci. (EECS), NTHU, Taiwan. -- \simplemmyy{2021}{7}{1}
+    % \begin{itemize}
+    %     \item A competition-based award granted to the students of Coll. of EECS at NTHU with an excellent graduation project
+    % \end{itemize}
+    \item \textbf{Academic Excellence Award} -- Dept. of Computer Science, NTHU, Taiwan.
+    \begin{itemize}
+        \item Dates: \simplemmyy{2018}{9}{1}, \simplemmyy{2019}{2}{1}, \simplemmyy{2021}{2}{1}.
+        \item Granted to the top 5\% of students in the class every semester.
+    \end{itemize}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Technical Skills
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Technical Skills}
+\newcommand{\sepitem}[2]{\item \textbf{#1} \hfill #2}
+
+\begin{itemize}
+    \sepitem{Programming Languages}{Python, C/C++, C\#, Javascript, Verilog}
+    \sepitem{Software \& Tools}{PyTorch, Tensorflow, LaTeX, Git, Docker, Unity}
+\end{itemize}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Reference
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% \begin{references}
+
+% \reference{Chun-Yi Lee}
+%           {Professor}
+%           {National Tsing Hua University}
+%           {cylee@cs.nthu.edu.tw}
+
+% \reference{Yu-Lin Chang}
+%           {Engineer Manager}
+%           {Google Inc.}
+%           {yulinchang@google.com}
+          
+% \reference{Zsolt Kira}
+%           {Assistant Professor}
+%           {Georgia Institute of Technology}
+%           {zkira@gatech.edu}
+
+% \reference{Cheng-Kuang Lee}
+%           {Senior Solutions Architect}
+%           {NVIDIA Corporation}
+%           {ckl@nvidia.com}
+
+% \end{references}
 
 \end{document}
